@@ -34,28 +34,13 @@ class BouddhaSkill(MycroftSkill):
                              self.handle_tell_me_a_quote_from_bouddha_intent)
 
         
+    def handle_ tell_me_a_quote_from_bouddha_intent(self, message):
+        self.speak_dialog("bouddha.quotes.born")
 
-    def handle_when_were_you_born_intent(self, message):
-        self.speak_dialog("when.was.i.born")
-
-    def handle_where_were_you_born_intent(self, message):
-        self.speak_dialog("where.was.i.born")
-
-    def handle_who_made_you_intent(self, message):
-        self.speak_dialog("who.made.me")
-
-    def handle_who_are_you_intent(self, message):
-        name = self.config_core.get("listener", {}).get("wake_word",
-                                                        "mycroft")
-        name = name.lower().replace("hey ", "")
-        self.speak_dialog("who.am.i", {"name": name})
-
-    def handle_what_are_you_intent(self, message):
-        self.speak_dialog("what.am.i")
-
-    def stop(self):
+    
+  def stop(self):
         pass
 
 
 def create_skill():
-    return PersonalSkill()
+    return BouddhaSkill()
