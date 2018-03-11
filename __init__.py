@@ -22,36 +22,18 @@ from mycroft.util.log import getLogger
 logger = getLogger(__name__)
 
 
-class PersonalSkill(MycroftSkill):
+class BouddhaSkill(MycroftSkill):
 
     def __init__(self):
-        super(PersonalSkill, self).__init__(name="PersonalSkill")
+        super(BouddhaSkill, self).__init__(name="BouddhaSkill")
 
     def initialize(self):
-        when_were_you_born_intent = IntentBuilder("WhenWereYouBornIntent")\
-            .require("WhenWereYouBornKeyword").build()
-        self.register_intent(when_were_you_born_intent,
-                             self.handle_when_were_you_born_intent)
+        tell_me_a_quote_from_bouddha_intent = IntentBuilder("TellMeAQuoteFromBouddha")\
+            .require("TellMeAQuoteFromBouddhaKeyword").build()
+        self.register_intent(tell_me_a_quote_from_bouddha_intent,
+                             self.handle_tell_me_a_quote_from_bouddha_intent)
 
-        where_were_you_born_intent = IntentBuilder("WhereWereYouBornIntent")\
-            .require("WhereWereYouBornKeyword").build()
-        self.register_intent(where_were_you_born_intent,
-                             self.handle_where_were_you_born_intent)
-
-        who_made_you_intent = IntentBuilder("WhoMadeYouIntent")\
-            .require("WhoMadeYouKeyWord").build()
-        self.register_intent(who_made_you_intent,
-                             self.handle_who_made_you_intent)
-
-        who_are_you_intent = IntentBuilder("WhoAreYouIntent")\
-            .require("WhoAreYouKeyword").build()
-        self.register_intent(who_are_you_intent,
-                             self.handle_who_are_you_intent)
-
-        what_are_you_intent = IntentBuilder("WhatAreYouIntent")\
-            .require("WhatAreYouKeyword").build()
-        self.register_intent(what_are_you_intent,
-                             self.handle_what_are_you_intent)
+        
 
     def handle_when_were_you_born_intent(self, message):
         self.speak_dialog("when.was.i.born")
