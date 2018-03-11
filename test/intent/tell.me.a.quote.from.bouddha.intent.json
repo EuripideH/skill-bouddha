@@ -1,0 +1,7 @@
+{
+  "utterance": "tell me a quote from bouddha",
+  "intent_type": "TellMeAQuoteFromBouddhaIntent",
+  "intent": {
+    "WhoAreYouKeyword": "tell me a quote from bouddha"
+  }
+}
