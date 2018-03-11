@@ -10,3 +10,5 @@ Mycroft can tell several famous quotes from Bouddha
 
 ## Credits 
 EuripideH
+
+| :heavy_check_mark:  | [Skill Bouddha](https://github.com/EuripideH/skill-bouddha#readme)| Get some quotes from Bouddha<br>
