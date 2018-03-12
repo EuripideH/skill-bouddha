@@ -22,10 +22,10 @@ from mycroft.util.log import getLogger
 logger = getLogger(__name__)
 
 
-class BuddhaSkill(MycroftSkill):
+class BouddhaSkill(MycroftSkill):
 
     def __init__(self):
-        super(BuddhaSkill, self).__init__(name="BuddhaSkill")
+        super(BouddhaSkill, self).__init__(name="BouddhaSkill")
 
     def initialize(self):
         tell_me_a_quote_from_buddha_intent = IntentBuilder("TellMeAQuoteFromBuddha")\
