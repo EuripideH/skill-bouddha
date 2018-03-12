@@ -1,7 +1,7 @@
 {
-  "utterance": "tell me a quote from bouddha",
-  "intent_type": "TellMeAQuoteFromBouddhaIntent",
+  "utterance": "tell me a quote from buddha",
+  "intent_type": "TellMeAQuoteFromBuddhaIntent",
   "intent": {
-    "TellMeAQuoteFromBouddhaKeyword": "tell me a quote from bouddha"
+    "TellMeAQuoteFromBouddhaKeyword": "tell me a quote from buddha"
   }
 }
