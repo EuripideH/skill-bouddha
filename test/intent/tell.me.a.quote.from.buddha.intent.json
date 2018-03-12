@@ -2,6 +2,6 @@
   "utterance": "tell me a quote from buddha",
   "intent_type": "TellMeAQuoteFromBuddhaIntent",
   "intent": {
-    "TellMeAQuoteFromBouddhaKeyword": "tell me a quote from buddha"
+    "TellMeAQuoteFromBuddhaKeyword": "tell me a quote from buddha"
   }
 }
