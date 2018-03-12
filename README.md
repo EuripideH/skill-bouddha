@@ -1,5 +1,5 @@
 ## Buddha-quote
-List of quotes from Bouddha
+List of quotes from Buddha
 
 ## Description 
 Mycroft can tell several famous quotes from Buddha
