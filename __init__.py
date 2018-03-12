@@ -21,6 +21,8 @@ from mycroft.util.log import getLogger
 
 logger = getLogger(__name__)
 
+__author__ = 'EuripideH'
+
 
 class BuddhaSkill(MycroftSkill):
 
