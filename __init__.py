@@ -43,4 +43,4 @@ class BouddhaSkill(MycroftSkill):
 
 
 def create_skill():
-    return BuddhaSkill()
+    return BouddhaSkill()
