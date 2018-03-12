@@ -35,7 +35,7 @@ class BouddhaSkill(MycroftSkill):
 
         
     def handle_tell_me_a_quote_from_buddha_intent(self, message):
-        self.speak_dialog("buddha.quotes.born")
+        self.speak_dialog("buddha.quotes")
 
     
   def stop(self):
