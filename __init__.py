@@ -22,20 +22,20 @@ from mycroft.util.log import getLogger
 logger = getLogger(__name__)
 
 
-class BouddhaSkill(MycroftSkill):
+class BuddhaSkill(MycroftSkill):
 
     def __init__(self):
-        super(BouddhaSkill, self).__init__(name="BouddhaSkill")
+        super(BuddhaSkill, self).__init__(name="BuddhaSkill")
 
     def initialize(self):
-        tell_me_a_quote_from_bouddha_intent = IntentBuilder("TellMeAQuoteFromBouddha")\
-            .require("TellMeAQuoteFromBouddhaKeyword").build()
-        self.register_intent(tell_me_a_quote_from_bouddha_intent,
-                             self.handle_tell_me_a_quote_from_bouddha_intent)
+        tell_me_a_quote_from_buddha_intent = IntentBuilder("TellMeAQuoteFromBuddha")\
+            .require("TellMeAQuoteFromBuddhaKeyword").build()
+        self.register_intent(tell_me_a_quote_from_buddha_intent,
+                             self.handle_tell_me_a_quote_from_buddha_intent)
 
         
-    def handle_ tell_me_a_quote_from_bouddha_intent(self, message):
-        self.speak_dialog("bouddha.quotes.born")
+    def handle_ tell_me_a_quote_from_buddha_intent(self, message):
+        self.speak_dialog("buddha.quotes.born")
 
     
   def stop(self):
@@ -43,4 +43,4 @@ class BouddhaSkill(MycroftSkill):
 
 
 def create_skill():
-    return BouddhaSkill()
+    return BuddhaSkill()
