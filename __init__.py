@@ -18,10 +18,11 @@ from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
 
+__author__ = 'EuripideH'
 
 logger = getLogger(__name__)
 
-__author__ = 'EuripideH'
+
 
 
 class BuddhaSkill(MycroftSkill):
@@ -39,8 +40,7 @@ class BuddhaSkill(MycroftSkill):
     def handle_tell_me_a_quote_from_buddha_intent(self, message):
         self.speak_dialog("buddha.quotes")
 
-    
-  def stop(self):
+    def stop(self):
         pass
 
 
