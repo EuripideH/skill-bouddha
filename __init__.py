@@ -20,13 +20,10 @@ from mycroft.util.log import getLogger
 
 __author__ = 'EuripideH'
 
-logger = getLogger(__name__)
-
-
-
+LOGGER = getLogger(__name__)
 
 class BuddhaSkill(MycroftSkill):
-
+    
     def __init__(self):
         super(BuddhaSkill, self).__init__(name="BuddhaSkill")
 
